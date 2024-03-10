@@ -1,4 +1,4 @@
-![This is me](https://github.com/PabloRuizdeOtero/PabloRuizdeOtero/blob/main/imagen.jpg)
+![This is me](https://github.com/PabloRuizdeOtero/PabloRuizdeOtero/blob/main/logoGit.png)
 ```javascript
 const PabloRiuz = {
 code: [
