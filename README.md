@@ -34,3 +34,41 @@ const PabloRiuz = {
   },
 };
 ```
+```c#
+using System;
+using System.Collections.Generic;
+
+public class RedSocial
+{
+    public string Nombre { get; set; }
+    public string Usuario { get; set; }
+
+    public RedSocial(string nombre, string usuario)
+    {
+        Nombre = nombre;
+        Usuario = usuario;
+    }
+}
+
+class Program
+{
+    public static List<RedSocial> MisRedesSociales()
+    {
+        return new List<RedSocial>
+        {
+            new RedSocial("LinkedIn", "www.linkedin.com/in/pablo-ruiz-de-otero-80986422b"),
+            new RedSocial("GitHub", "PabloRuizdeOtero")
+        };
+    }
+
+    static void Main(string[] args)
+    {
+        var misRedes = MisRedesSociales();
+        foreach (var red in misRedes)
+        {
+            Console.WriteLine($"Red Social: {red.Nombre}, Usuario: {red.Usuario}");
+        }
+    }
+}
+
+```
