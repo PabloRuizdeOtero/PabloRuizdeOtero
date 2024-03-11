@@ -21,19 +21,65 @@ class Persona(val nombre: String, val profesion: String, val descripcion: String
   }
 ```
 ```javascript
-const PabloRiuz = {
+const PabloRuiz = {
   code: [
-    "DESARROLLO MOBILE","DESARROLLO WEB",
-    "JAVA","C#","PYTHON","CSS3","HTML5",
-    "KOTLIN",".NET","JAVASCRIPT","MySqL","PHP"],
-  entornos:[
-      "Android Studio",
-      "Django",
-      "Unity",
-      "Visual Studio", 
-    ]
+    "DESARROLLO MOBILE", "DESARROLLO WEB",
+    "JAVA", "C#", "PYTHON", "CSS3", "HTML5",
+    "KOTLIN", ".NET", "JAVASCRIPT", "MySqL", "PHP"
+  ],
+  entornos: [
+    "Android Studio",
+    "Django",
+    "Unity",
+    "Visual Studio"
+  ],
+  proyectos: [],
+
+  agregarHabilidad(habilidad) {
+    if (!this.code.includes(habilidad)) {
+      this.code.push(habilidad);
+    }
   },
+
+  agregarEntorno(entorno) {
+    if (!this.entornos.includes(entorno)) {
+      this.entornos.push(entorno);
+    }
+  },
+
+  agregarProyecto(proyecto) {
+    this.proyectos.push(proyecto);
+  },
+
+  mostrarHabilidades() {
+    console.log('Habilidades:', this.code.join(', '));
+  },
+
+  mostrarEntornos() {
+    console.log('Entornos de Desarrollo:', this.entornos.join(', '));
+  },
+
+  mostrarProyectos() {
+    if (this.proyectos.length > 0) {
+      this.proyectos.forEach((proyecto, index) => {
+        console.log(`Proyecto ${index + 1}: ${proyecto.nombre} - ${proyecto.descripcion}`);
+      });
+    } else {
+      console.log('No hay proyectos agregados aún.');
+    }
+  }
 };
+
+// Uso de las funciones
+PabloRuiz.agregarHabilidad('JavaFx');
+PabloRuiz.agregarEntorno('Intellij');
+PabloRuiz.agregarProyecto({ nombre: 'App de Finanzas Personales',
+descripcion: 'Una aplicación móvil para gestionar finanzas personales.' });
+
+PabloRuiz.mostrarHabilidades();
+PabloRuiz.mostrarEntornos();
+PabloRuiz.mostrarProyectos();
+
 ```
 ```c#
 using System;
