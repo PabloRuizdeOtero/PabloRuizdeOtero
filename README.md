@@ -25,7 +25,7 @@ const PabloRuiz = {
   code: [
     "DESARROLLO MOBILE", "DESARROLLO WEB",
     "JAVA", "C#", "PYTHON", "CSS3", "HTML5",
-    "KOTLIN", ".NET", "JAVASCRIPT", "MySqL", "PHP"
+    "KOTLIN", ".NET", "JAVASCRIPT", "MySqL", "PHP", "FIREBASE"
   ],
   entornos: [
     "Android Studio",
