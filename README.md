@@ -24,7 +24,8 @@ class Persona(val nombre: String, val profesion: String, val descripcion: String
 const PabloRiuz = {
   code: [
     "DESARROLLO MOBILE","DESARROLLO WEB",
-    "JAVA","C#","PYTHON","CSS3","HTML5","KOTLIN",".NET","JAVASCRIPT"],
+    "JAVA","C#","PYTHON","CSS3","HTML5",
+    "KOTLIN",".NET","JAVASCRIPT","MySqL","PHP"],
   entornos:[
       "Android Studio",
       "Django",
