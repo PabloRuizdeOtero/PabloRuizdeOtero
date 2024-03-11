@@ -31,7 +31,10 @@ const PabloRuiz = {
     "Android Studio",
     "Django",
     "Unity",
-    "Visual Studio"
+    "Visual Studio",
+    "Visual Studio Code",
+    "Eclipse",
+    "Apache NetBeans"
   ],
   proyectos: [],
 
