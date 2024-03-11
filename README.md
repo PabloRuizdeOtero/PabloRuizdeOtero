@@ -74,7 +74,7 @@ const PabloRuiz = {
 PabloRuiz.agregarHabilidad('JavaFx');
 PabloRuiz.agregarEntorno('Intellij');
 PabloRuiz.agregarProyecto({ nombre: 'App de Finanzas Personales',
-descripcion: 'Una aplicación móvil para gestionar finanzas personales.' });
+                            descripcion: 'Una aplicación móvil para gestionar finanzas personales.' });
 
 PabloRuiz.mostrarHabilidades();
 PabloRuiz.mostrarEntornos();
